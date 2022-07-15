@@ -132,6 +132,11 @@ bool TalkActions::registerEvent(Event* event, xmlNodePtr p, bool override)
 	return true;
 }
 
+inline friend std::stringstream & operator<<(std::stringstream & sl, std::stringstream & ss)
+{
+    return sl << ss.str();
+}
+
 bool TalkActions::onPlayerSay(Creature* creature, uint16_t channelId, const std::string& words, bool ignoreAccess, ProtocolGame* pg) //CA
 {
 	std::string cmd[TALKFILTER_LAST] = {words, words, words}, param[TALKFILTER_LAST] = {"", "", ""};
