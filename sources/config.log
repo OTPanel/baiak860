@@ -1258,15 +1258,15 @@ configure:5810: $? = 0
 configure:5810: result: yes
 configure:5810: checking for boost/asio.hpp
 configure:5810: result: yes
-configure:5826: checking boost/tr1/unordered_set.hpp usability
+configure:5826: checking boost/unordered_set.hpp usability
 configure:5826: g++ -c -g -O2  conftest.cpp >&5
 configure:5826: $? = 0
 configure:5826: result: yes
-configure:5826: checking boost/tr1/unordered_set.hpp presence
+configure:5826: checking boost/unordered_set.hpp presence
 configure:5826: g++ -E  conftest.cpp
 configure:5826: $? = 0
 configure:5826: result: yes
-configure:5826: checking for boost/tr1/unordered_set.hpp
+configure:5826: checking for boost/unordered_set.hpp
 configure:5826: result: yes
 configure:5843: checking cryptopp/sha.h usability
 configure:5843: g++ -c -g -O2  conftest.cpp >&5

@@ -19,6 +19,7 @@
 #include <sstream>
 #endif
 
+#include <boost/lexical_cast.hpp>
 #include "creatureevent.h"
 #include "player.h"
 #include "tools.h"
