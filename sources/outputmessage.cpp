@@ -184,10 +184,10 @@ OutputMessage_ptr OutputMessagePool::getOutputMessage(Protocol* protocol, bool a
 		m_allMessages.push_back(msg);
 #endif
 	}
-
+    using namespace std::placeholders;
 	OutputMessage_ptr omsg;
 	omsg.reset(m_outputMessages.back(),
-		boost::bind(&OutputMessagePool::releaseMessage, this, std::placeholders::_1));
+		boost::bind(&OutputMessagePool::releaseMessage, this, _1));
 
 	m_outputMessages.pop_back();
 	configureOutputMessage(omsg, protocol, autoSend);
