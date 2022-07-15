@@ -15,7 +15,6 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ////////////////////////////////////////////////////////////////////////
 
-#define BOOST_BIND_NO_PLACEHOLDERS
 #ifdef __OTPCH__
 #error "Precompiled header should be included only once."
 #endif
